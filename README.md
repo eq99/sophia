@@ -27,6 +27,14 @@ What about math, physics, finace, art, language, etc.
 
 That's why we need project sophia.
 
+# Project Design, architect
+
+- Restful API: flask-restful(python): https://github.com/xiayulu/sophiadb
+- Web UI: Vue.js + vuetify: https://github.com/xiayulu/sophia_web
+- How to store document: git repo just like github: https://github.com/xiayulu/restfulgit
+
+You can see more Design details here: https://github.com/xiayulu/sophia/blob/master/Website%20Design/websiteArchitect.md
+
 # 简介
 
 这个项目是做什么的呢？
@@ -57,6 +65,11 @@ That's why we need project sophia.
 
 这个项目旨在解决这个问题。
 
+# 项目架构
 
+用到的技术：
+- Restful API: flask-restful(python): https://github.com/xiayulu/sophiadb
+- Web UI: Vue.js + vuetify: https://github.com/xiayulu/sophia_web
+- How to store document: git repo just like github: https://github.com/xiayulu/restfulgit
 
-
+架构图、设计图见: https://github.com/xiayulu/sophia/blob/master/Website%20Design/websiteArchitect.md
