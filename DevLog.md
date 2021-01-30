@@ -9,6 +9,7 @@ The road of this project is tough. I have  made many projects death.
 This is another try.
 
 - Deploy a skelon app into production environment.
+1. deploy a flask app.
 
 # 20210125
 
