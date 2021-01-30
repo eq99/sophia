@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_restful import Api
 from plugins import api, db
 from app.Course.view import course_bp
 

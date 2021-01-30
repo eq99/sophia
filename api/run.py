@@ -1,7 +1,7 @@
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from app import create_app
-from plugins import db, api
+from plugins import db
 
 app = create_app()
 manager = Manager(app=app)
