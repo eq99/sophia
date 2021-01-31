@@ -14,6 +14,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 Mako==1.1.4
 MarkupSafe==1.1.1
+psycopg2-binary==2.8.6
 pycparser==2.20
 python-dateutil==2.8.1
 python-dotenv==0.15.0
@@ -23,5 +24,6 @@ qcloudsms-py==0.1.4
 six==1.15.0
 SQLAlchemy==1.3.22
 urllib3==1.26.3
+uWSGI==2.0.19.1
 Werkzeug==1.0.1
 wincertstore==0.2
