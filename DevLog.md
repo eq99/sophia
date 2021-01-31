@@ -1,6 +1,8 @@
 
 
 
+# 20210131
+run flask app in docker
 
 # 20210130
 
