@@ -1,12 +1,12 @@
 version: '3.5'
 
 services:
-  www:
+  postgres:
     image: postgres:13
     container_name: postgres
     restart: unless-stopped
     environment:
-      POSTGRES_PASSWORD: 123admin^&*
+      POSTGRES_PASSWORD: f98c0D8*
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
@@ -14,16 +14,27 @@ services:
     networks:
       - postgres
 
-  postgres:
-    image: postgres:13
-    container_name: postgres
+  sophia-api:
+    image: sophia-api:0.0.1
+    container_name: sophia-api
     restart: unless-stopped
-    environment:
-      POSTGRES_PASSWORD: 123admin^&*
+    depends_on:
+      - postgres
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - sophia:/sophia/api
+    networks:
+      - postgres
+
+  sophia-www:
+    image: sophia-www:0.0.1
+    container_name: sophia-www
+    restart: unless-stopped
+    depends_on:
+      - sophia-api
+    volumes:
+      - sophia:/sophia/api
     ports:
-      - 5432:5432
+      - 80:80
     networks:
       - postgres
 
@@ -37,7 +48,7 @@ services:
       - postgres
     environment:
       PGADMIN_DEFAULT_EMAIL: zuiaiqiansen@163.com
-      PGADMIN_DEFAULT_PASSWORD: 123admin&*
+      PGADMIN_DEFAULT_PASSWORD: f98c0D8
       PGADMIN_LISTEN_PORT: 5431
     ports:
       - 5431:5431
@@ -53,3 +64,4 @@ networks:
 volumes:
   pgdata:
   pgadmin:
+  sophia:

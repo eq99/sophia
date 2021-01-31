@@ -1,6 +1,6 @@
 # build stage
 # FROM node:lts-alpine as build-stage
-# WORKDIR /app
+WORKDIR /sophia
 # COPY package*.json ./
 # RUN npm install
 # COPY . .
