@@ -2,8 +2,9 @@
 
 
 # 20210131
-run flask app in docker
 
+run flask app in docker :heavy-check-mark:
+run flask app behind nginx
 # 20210130
 
 The road of this project is tough. I have  made many projects death.
