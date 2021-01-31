@@ -7,3 +7,4 @@
 - Flask-Script: Used to manage flask project
 - Flask-Migrate: Used to manage database
 - python-dotenv: Used to manage `.env` file
+- uwsgi: The product server
