@@ -8,3 +8,7 @@
 - Flask-Migrate: Used to manage database
 - python-dotenv: Used to manage `.env` file
 - uwsgi: The product server
+
+
+# build docker image
+docker build -t sophiaApi:0.0.1 .
