@@ -20,8 +20,8 @@ services:
     restart: unless-stopped
     depends_on:
       - postgres
-    volumes:
-      - sophia:/sophia/api
+    ports:
+      - 8080:8080
     networks:
       - postgres
 
@@ -31,8 +31,6 @@ services:
     restart: unless-stopped
     depends_on:
       - sophia-api
-    volumes:
-      - sophia:/sophia/api
     ports:
       - 80:80
     networks:
@@ -64,4 +62,3 @@ networks:
 volumes:
   pgdata:
   pgadmin:
-  sophia:
